@@ -1,0 +1,11 @@
+﻿<Window x:Class="Zlibrary网址获取器.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Z-library最新网址" Height="450" Width="800"
+        Background="#F0F0F0">
+    <Grid>
+        <Button Name="FetchButton" Content="获取最新网址" HorizontalAlignment="Right" Margin="0,10,10,0" VerticalAlignment="Top" Width="110" Click="FetchButton_Click" Height="35" />
+        <TextBox Name="ResponseTextBox" Margin="10,50,10,10" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" AcceptsReturn="True"/>
+        <TextBlock Name="LoadingTextBlock" Text="加载中..." Visibility="Collapsed" Foreground="Red" Margin="10"/>
+    </Grid>
+</Window>
